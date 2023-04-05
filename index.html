@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio website</title>
+    <link rel="stylesheet" href="profile.css">
+    <script src="https://kit.fontawesome.com/90bdb1eada.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <!-- <img src="images/proxy_form.gif" class="logo"> -->
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p><i class="fa-solid fa-code"></i> &nbsp Full-Stack Developer</p>
+                <h1>Hi,I'm <span>S</span>akir Shah <br>From Bihar India</h1>
+            </div>
+        </div>
+    </div>
+    <!-- -------------about---------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/back1.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am Sakir shah from Bihar.As a college student of Electronics and communication.But i was interested in 
+                        Computer Science.So after joining the college.I have been interested in DSA
+                         and Data science so during my college i have
+                        selected those courses which was related to computer
+                        Science and as of now i have done successfully and I am ready to face the chanllenges in IT
+                        field.
+                        I would like to start my career in IT ﬁeld that’s all.
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Education </p>
+                        <p class="tab-links" onclick="opentab('experience')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Experience</p>
+
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Full-Stack Development</span><br>Newton School — Sept 2022-Apr 2023 Present</li>
+                            <li><span>Data Science Masters</span><br>PW Skills — Feb 2023-July 2023 Present</li>
+                            <li><span>B.Tech</span><br>Indian Institute Of Information technology,Sri City,A.P,INDIA<br>
+                                <i class="fa-solid fa-school"></i> Batch of 2022 with 6.2 GPA (ECE)
+                            </li>
+                            <li><span>Diploma in Computer Application</span><br>Jitu Institute Of Information
+                                Technology,Patna<br>
+                                <i class="fa-solid fa-school"></i> Batch of 2016 (A.DCA) with A+%
+                            </li>
+                            <li><span>12th Class</span><br>Parmashwer PD Inter College Shilhauri, Marhaura Saran<br>
+                                <i class="fa-solid fa-school"></i> Batch of 2015 (Science From BSEB) with 63.3%
+                            </li>
+                            <li><span>10th Class</span><br>G J P H/S Sani Basatpur ,Siwan ,Bihar<br>
+                                <i class="fa-solid fa-school"></i> Batch of 2013 (BSEB) with 52%
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+
+                            <li><span>Programing Languages</span><br>C , C++ , Python ,Java</li>
+                            <li><span>Web Technologies</span><br>HTML, CSS, JavaScript,react,Django</li>
+                            <li><span>Other</span><br>Data Structure & Algorithm</li>
+                        </ul>
+
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Fresher</span><br></li>
+                        </ul>
+                    </div>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -----------------services---------------- -->
+    <div id="services">
+        <div class="container">
+            <!-- <h1 style:font-size:60px >My Services</h1> -->
+            <h1 style="color:white;font-size:60px;">My Services</h1>      
+
+            <div class="services-list">
+
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Developer</h2>
+                    <p>I am  web designer and responsible for the appearance,layout,
+                     and content of a website as well as responsive since 2022s.</p>
+                    <a href="https://en.wikipedia.org/wiki/Web_developer">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code-compare"></i>
+                    <h2>Competitive Programmer</h2>
+                    <p>I started my competitive programming journey during my college days.More precisely on may 2018.I learned about the benefits of competitive programming,skills developed by solving problems and many more.At that moment.I decided to give more time and energy on it</p>
+                    <a href="https://en.wikipedia.org/wiki/Competitive_programming">Learn More</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-database"></i>
+                    <h2>Data Scienctist</h2>
+                    <p>I am pursuining data scientist from  PW skills right now.
+                         My focus is on e-commerce and I am particularly interested in recommender systems.</p>
+                    <a href="https://en.wikipedia.org/wiki/Data_science">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ---------------------------portfolio------------------>
+    <div id="portfolio">
+
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>Gaming_Webpage</h3>
+                        <p>The idea about to create a gaming website which contains
+                            6-8 self-made games created by using JavaScript and HTML,CSS,Django Python framework.So that,
+                            the website will contain a login portal. Users will be
+                            able to create an account which will allow them to
+                            record their previous scores.</p>
+                        <a href="https://642d1d11a103d46185dc6a6d--magenta-bavarois-732bfa.netlify.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+
+
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                       
+                        <h3>SYNC CITY</h3>
+                        <p>A basic website that connects the students
+                            with the professors and the administration. It
+                            helps the students to be up-to-date with re-
+                            cent notiﬁcations as well as they can respond
+                            to it with inbuilt messaging feature by using technology to HTML CSS JavaScript & Django</p>
+                        <a href="https://642dc9072e2d1216ec78d168--velvety-sable-50ea19.netlify.app/#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3>Maze Runner</h3>
+                        <p>Technology used is Python.A dynamic 2D-game in which we make 
+                            character move up, down, left, right while trying to
+                            escape from several monsters and also 
+                            character has a gun which shoot monsters down by
+                            pressing space on keyboard in a maze.</p>
+                           <a href="https://github.com/sakirhussain51/Maze-runner"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+    <!-- --------------------contact-------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i>sakir.s17@iiits.in</p>
+                    <p><i class="fa-solid fa-phone"></i>+91-6204197002</p>
+                    <div class="social-icon">
+                        <a href=""><i class="fab fa-linkedin"></i></a>
+                        <a href=""><i class="fa-brands fa-github"></i></a>
+                        <a href=""><i class="fab fa-facebook"></i></a>
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                    </div>
+                    <a href="images/Sakir_Shah_Resume.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>copyright @Sakir. Made with <i class="fa-solid fa-heart"></i>by myself only</p>
+        </div>
+    </div>
+
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycby5A3paqMW2XK9SN7GrfvHBFJi_u46zGP4pVOqx6pSUoxOP7Rv7g6KrbAi-0exNV_sj/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+    <script>
+        var sidemeu = document.getElementById("sidemenu");
+        function openmenu() {
+            sidemeu.style.right = "0";
+        }
+        function closemenu() {
+            sidemeu.style.right = "-200px";
+        }
+    </script>
+</body>
+
+</html>
